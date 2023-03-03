@@ -23,3 +23,24 @@ header{
   height: 15%;
   border-radius: 2rem;
 }
+#section1{
+  height: 67.5rem;
+}
+#section2{
+  height: 31.25rem;
+}
+#section3{
+  height: 67.5rem;
+}
+#section4{
+  height: 55rem;
+}
+#section5{
+  height: 67.5rem;
+}
+#section6{
+  height: 67.5rem;
+}
+footer{
+  height: 37rem;
+}
