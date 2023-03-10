@@ -45,12 +45,42 @@ header {
 }
 #section2 {
   height: 31.25rem;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, blue ,black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#InfoContainer{
+  width: 86rem;
+  margin: auto;
+  display: flex;
+}
+#HeaderContainerSection2{
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  border-right: solid;
+  border-color: white;
+  height: 25rem;
+}
+#HeaderSection2{
+  color: white;
+  font-size: 17rem;
+}
+#InfoContainerSection2{
+  padding-left: 40px;
+}
+#TextSection2{
+  color: white;
+  font-size: 3rem;
 }
 #section3 {
   height: 67.5rem;
 }
 #section4 {
   height: 55rem;
+  background-color: blue;
 }
 #section5 {
   height: 67.5rem;
