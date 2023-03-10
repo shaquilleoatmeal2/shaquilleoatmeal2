@@ -28,6 +28,11 @@ header{
 }
 #section2{
   height: 31.25rem;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, blue , green);
+}
+#InfoContainer{
+  width: 86rem;
 }
 #section3{
   height: 67.5rem;
