@@ -9,7 +9,16 @@ header {
   justify-content: space-between;
   width: 100%;
   height: 3rem;
-  position: absolute;
+  position: fixed;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: blue;
+  text-decoration-color: black;
+  text-shadow: 2px 1px 1px black;
 }
 #ul {
   position: relative;
@@ -30,18 +39,46 @@ header {
   align-items: center;
   height: auto;
 }
-
-#meny > #meny-top,
-#meny > #meny-mid,
-#meny > #meny-bot {
+#meny:hover{
+  cursor: pointer;
+}
+header > #meny > span{
+  display: block;
+  position: relative;
   background-color: white;
   width: 2.5rem;
   height: 0.5rem;
   margin: 0.2rem;
   border-radius: 2rem;
+  /*från julldryck Alex*/
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+}
+header > #meny > span:first-child{
+	transform-origin: 0% 0%;
+}
+header > #meny > span:nth-child(2){
+	transform-origin: 0% 100%;
+}
+header > #meny[data-status="true"] > span{
+	opacity: 1;
+	transform: rotate(45deg) translate(1px, 0px);
+	background-color: black;
+}
+header > #meny[data-status="true"] > span:nth-child(2){
+	opacity: 0;
+	transform: rotate(0deg) scale(0.2, 0.2);
+}
+header > #meny[data-status="true"] > span:nth-child(3){
+	transform: rotate(-45deg) translate(-3px, -4px);
 }
 #section1 {
   height: 67.5rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+#sd1 {
+  height: 3rem;
 }
 #section2 {
   height: 31.25rem;
