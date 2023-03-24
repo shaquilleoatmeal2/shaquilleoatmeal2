@@ -2,6 +2,7 @@ body{
   background-color: turquoise;
   height: 387.5rem;
   margin: 0px;
+  font-family: 'Libre Franklin', sans-serif;
 }
 header{
   background-color: darkblue;
@@ -25,7 +26,7 @@ header{
   border-radius: 2rem;
 }
 #section1{
-  height: 67.5rem;
+  height: 57.5rem;
 }
 #section2{
   height: 31.25rem;
@@ -34,6 +35,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 15px black;
 }
 #InfoContainer{
   width: 86rem;
@@ -50,28 +52,70 @@ header{
 }
 #HeaderSection2{
   color: white;
-  font-size: 17rem;
+  font-size: 13rem;
+  font-weight: 500;
 }
 #InfoContainerSection2{
   padding-left: 40px;
 }
 #TextSection2{
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 #section3{
-  height: 67.5rem;
+  height: 61rem;
 }
 #section4{
   height: 55rem;
-  background-color: blue;
+  background-image: linear-gradient(to bottom right, blue ,black);
+  box-shadow: 0 0 15px black;
+}
+#ContainerSection4{
+  width: 86rem;
+  height: 100%;
+  margin: auto;
+}
+#RubrikSection4{
+  color: white;
+  font-size: 7rem;
+  padding-top: 1.5rem;
+  margin-left: 2rem;
+  margin-bottom: 0rem;
+  font-weight: 500;
+}
+#BoxContainerSection4{
+  width: 100%;
+  height: 41rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.BoxSection4{
+  width: 32%;
+  height: 48%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.BildSection4{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+.TextSection4{
+  font-size: 1rem;
+  margin-left: 1rem;
+  font-weight: 600;
 }
 #section5{
-  height: 67.5rem;
+  height: 61rem;
 }
 #section6{
-  height: 67.5rem;
+  height: 61rem;
 }
 footer{
   height: 37rem;
+  background-color: blue;
 }
