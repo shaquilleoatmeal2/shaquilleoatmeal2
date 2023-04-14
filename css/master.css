@@ -4,83 +4,7 @@ body {
   margin: 0px;
   font-family: 'Libre Franklin', sans-serif;
 }
-header {
-  background-color: darkblue;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 3rem;
-  position: fixed;
-}
-a{
-  text-decoration: none;
-  color: white;
-}
-a:hover{
-  color: blue;
-  text-decoration-color: black;
-  text-shadow: 2px 1px 1px black;
-}
-#ul {
-  position: relative;
-  display: none;
-  width: 4rem;
-  height: 6rem;
-  top: -0.75rem;
-  left: -1.05rem;
-  flex-direction: column;
-  background-color: darkblue;
-}
-#meny {
-  display: flex;
-  width: 4rem;
-  margin: 3px;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: auto;
-}
-#meny:hover{
-  cursor: pointer;
-}
-header > #meny > span{
-  display: block;
-  position: relative;
-  background-color: white;
-  width: 2.5rem;
-  height: 0.5rem;
-  margin: 0.2rem;
-  border-radius: 2rem;
-  /*från julldryck Alex*/
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
-}
-header > #meny > span:first-child{
-	transform-origin: 0% 0%;
-}
-header > #meny > span:nth-child(2){
-	transform-origin: 0% 100%;
-}
-header > #meny[data-status="true"] > span{
-	opacity: 1;
-	transform: rotate(45deg) translate(1px, 0px);
-	background-color: black;
-}
-header > #meny[data-status="true"] > span:nth-child(2){
-	opacity: 0;
-	transform: rotate(0deg) scale(0.2, 0.2);
-}
-header > #meny[data-status="true"] > span:nth-child(3){
-	transform: rotate(-45deg) translate(-3px, -4px);
-}
-#section1 {
-  height: 57.5rem;
-  display: flex;
-  flex-direction: column-reverse;
-}
-#sd1 {
-  height: 3rem;
-}
+
 #section2 {
   height: 31.25rem;
   width: 100%;
@@ -118,6 +42,53 @@ header > #meny[data-status="true"] > span:nth-child(3){
 #section3{
   height: 61rem;
 }
+
+.StorBildContainer{
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.TextContainer{
+  width: 55%;
+  padding: 1rem;
+}
+.ListRubrik{
+  color: white;
+  font-size: 4rem;
+}
+.ListText{
+  color: white;
+  font-size: 1.5rem;
+}
+
+#Section3Version1, #Section3Version2, #Section3Version3, #Section3Version4, #Section3Version5{
+  display: flex;
+  width: 86rem;
+  height: 45.75rem;
+  background-color: red;
+  margin: auto;
+}
+#Section3Version2, #Section3Version3, #Section3Version4, #Section3Version5{
+  display: none;
+}
+
+#ArtikelVäljare3, #ArtikelVäljare5, #ArtikelVäljare6{
+  width: 86%;
+  height: 15.25rem;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ArtikelVäljare5{
+  margin-left: 14%;
+}
+.ArtikelBild{
+  height: 90%;
+  width: 17%;
+}
+
 #section4 {
   height: 55rem;
   background-image: linear-gradient(to bottom right, blue ,black);
@@ -131,7 +102,7 @@ header > #meny[data-status="true"] > span:nth-child(3){
 #RubrikSection4{
   color: white;
   font-size: 7rem;
-  padding-top: 1.5rem;
+  margin-top: 0;
   margin-left: 2rem;
   margin-bottom: 0rem;
   font-weight: 500;
@@ -165,9 +136,30 @@ header > #meny[data-status="true"] > span:nth-child(3){
 #section5{
   height: 61rem;
 }
+#Section5Version1, #Section5Version2, #Section5Version3, #Section5Version4, #Section5Version5{
+  display: flex;
+  width: 86rem;
+  height: 45.75rem;
+  background-color: red;
+  margin: auto;
+}
+#Section5Version2, #Section5Version3, #Section5Version4, #Section5Version5{
+  display: none;
+}
 #section6{
   height: 61rem;
 }
+#Section6Version1, #Section6Version2, #Section6Version3, #Section6Version4, #Section6Version5{
+  display: flex;
+  width: 86rem;
+  height: 45.75rem;
+  background-color: red;
+  margin: auto;
+}
+#Section6Version2, #Section6Version3, #Section6Version4, #Section6Version5{
+  display: none;
+}
+
 footer {
   height: 37rem;
   background-color: blue;
