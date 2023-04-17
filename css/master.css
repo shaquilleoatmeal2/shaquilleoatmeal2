@@ -1,13 +1,6 @@
-
-body {
-  background-color: turquoise;
-  height: auto;
-  margin: 0px;
-  font-family: 'Libre Franklin', sans-serif;
-}
 body::-webkit-scrollbar{
   position: relative;
-  background: -webkit-linear-gradient(darkblue, cyan,cyan,cyan,cyan,cyan,darkblue,darkblue,darkblue,darkblue,cyan,cyan,cyan,cyan,cyan,cyan,cyan,darkblue,darkblue,darkblue,darkblue,darkblue,darkblue,cyan,cyan,cyan,cyan,cyan,cyan,cyan ,cyan,cyan,cyan,cyan,cyan,black,black,black,black,black);
+  background: -webkit-linear-gradient(darkblue,cyan,cyan,cyan,cyan,darkblue,darkblue,darkblue,darkblue,cyan,cyan,cyan,cyan,cyan,cyan,cyan,darkblue,darkblue,darkblue,darkblue,darkblue,darkblue,cyan,cyan,cyan,cyan,cyan,cyan,cyan ,cyan,cyan,cyan,cyan,cyan,black,black,black,black,black);
   width: 1.5rem;
   border-radius: 0.1rem;
 }
@@ -19,83 +12,6 @@ body::-webkit-scrollbar-thumb {
   background: -webkit-linear-gradient(blue, yellow);
   border-radius: 4rem;
   border: 3px solid black;
-}
-header {
-  background-color: darkblue;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 3rem;
-  position: fixed;
-}
-a{
-  text-decoration: none;
-  color: white;
-}
-a:hover{
-  color: blue;
-  text-decoration-color: black;
-  text-shadow: 2px 1px 1px black;
-}
-#ul {
-  position: relative;
-  display: none;
-  width: 4rem;
-  height: 6rem;
-  top: -0.75rem;
-  left: -1.05rem;
-  flex-direction: column;
-  background-color: darkblue;
-}
-#meny {
-  display: flex;
-  width: 4rem;
-  margin: 3px;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: auto;
-}
-#meny:hover{
-  cursor: pointer;
-}
-header > #meny > span{
-  display: block;
-  position: relative;
-  background-color: white;
-  width: 2.5rem;
-  height: 0.5rem;
-  margin: 0.2rem;
-  border-radius: 2rem;
-  /*från julldryck Alex*/
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
-}
-header > #meny > span:first-child{
-	transform-origin: 0% 0%;
-}
-header > #meny > span:nth-child(2){
-	transform-origin: 0% 100%;
-}
-header > #meny[data-status="true"] > span{
-	opacity: 1;
-	transform: rotate(45deg) translate(1px, 0px);
-	background-color: black;
-}
-header > #meny[data-status="true"] > span:nth-child(2){
-	opacity: 0;
-	transform: rotate(0deg) scale(0.2, 0.2);
-}
-header > #meny[data-status="true"] > span:nth-child(3){
-	transform: rotate(-45deg) translate(-3px, -4px);
-}
-#section1 {
-  height: 57.5rem;
-  display: flex;
-  flex-direction: column-reverse;
-}
-#sd1 {
-  height: 3rem;
 }
 #section2 {
   height: 31.25rem;
