@@ -59,7 +59,7 @@ body::-webkit-scrollbar-thumb {
 }
 #tomsd3{
   position: relative;
-  top:3rem;
+  top:-3rem;
 }
 
 .StorBildContainer{
