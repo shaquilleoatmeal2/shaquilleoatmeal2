@@ -1,8 +1,23 @@
 body {
   background-color: turquoise;
-  height: 387.5rem;
+  height: auto;
   margin: 0px;
   font-family: 'Libre Franklin', sans-serif;
+}
+body::-webkit-scrollbar{
+  position: relative;
+  background: -webkit-linear-gradient(darkblue, cyan,cyan,cyan,cyan,cyan,darkblue,darkblue,darkblue,darkblue,cyan,cyan,cyan,cyan,cyan,cyan,cyan,darkblue,darkblue,darkblue,darkblue,darkblue,darkblue,cyan,cyan,cyan,cyan,cyan,cyan,cyan ,cyan,cyan,cyan,cyan,cyan,black,black,black,black,black);
+  width: 1.5rem;
+  border-radius: 0.1rem;
+}
+body::-webkit-scrollbar-track{
+  border: 1px solid gray;
+  border-radius: 0.1rem;
+}
+body::-webkit-scrollbar-thumb {
+  background: -webkit-linear-gradient(blue, yellow);
+  border-radius: 4rem;
+  border: 3px solid black;
 }
 header {
   background-color: darkblue;
@@ -115,8 +130,19 @@ header > #meny[data-status="true"] > span:nth-child(3){
   color: white;
   font-size: 2.5rem;
 }
+#tomsd2{
+  height: 0;
+  position: relative;
+  top:13rem;
+}
 #section3{
   height: 61rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+#tomsd3{
+  position: relative;
+  top:3rem;
 }
 #section4 {
   height: 55rem;
@@ -124,7 +150,7 @@ header > #meny[data-status="true"] > span:nth-child(3){
   box-shadow: 0 0 15px black;
 }
 #ContainerSection4{
-  width: 86rem;
+  width: 76rem;
   height: 100%;
   margin: auto;
 }
@@ -170,5 +196,38 @@ header > #meny[data-status="true"] > span:nth-child(3){
 }
 footer {
   height: 37rem;
-  background-color: blue;
+  background-color: black;
+  display: flex;
+
+}
+footer > aside{
+  width: 50%;
+  color: white;
+  align-items: center;
+  display: flex;
+}
+.left-side{
+  font-size: 2rem;
+  font-variant: small-caps;
+  justify-content: center;
+}
+.left-side > p{
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.left-side > p:hover{
+  cursor: wait;
+  text-decoration: underline;
+}
+.right-side{
+  flex-direction: column;
+}
+.right-side > p:first-child{
+  margin-bottom: 2rem;
+}
+.right-side > p:nth-child(3), .right-side > p:nth-child(4), .right-side > p:nth-child(2){
+  margin-bottom: 0;
+}
+.right-side > p:last-child, .right-side > p:nth-last-child(2), .right-side > p:nth-child(5){
+  margin-top: 0;
 }
