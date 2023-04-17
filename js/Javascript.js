@@ -19,4 +19,9 @@ document.getElementById("sec3send").addEventListener("click", function (){
     behavior: "smooth"});})
 document.getElementById("sec4send").addEventListener("click", function (){
   document.getElementById("tomsd3").scrollIntoView({
-    behavior: "smooth"});})
+    behavior: "smooth"
+  });
+
+})
+
+//<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>

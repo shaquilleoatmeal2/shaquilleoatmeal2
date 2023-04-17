@@ -5,6 +5,111 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
     <title>Top 100 things</title>
+    <style media="screen">
+    body {
+      background-color: turquoise;
+      height: 387.5rem;
+      margin: 0px;
+      font-family: 'Libre Franklin', sans-serif;
+    }
+    header {
+      background-color: darkblue;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 3rem;
+      position: fixed;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+    a:hover{
+      color: blue;
+      text-decoration-color: black;
+      text-shadow: 2px 1px 1px black;
+    }
+    #ul {
+      position: relative;
+      display: none;
+      width: 4rem;
+      height: 6rem;
+      top: -0.75rem;
+      left: -1.05rem;
+      flex-direction: column;
+      background-color: darkblue;
+    }
+    #meny {
+      display: flex;
+      width: 4rem;
+      margin: 3px;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: auto;
+    }
+    #meny:hover{
+      cursor: pointer;
+    }
+    header > #meny > span{
+      display: block;
+      position: relative;
+      background-color: white;
+      width: 2.5rem;
+      height: 0.5rem;
+      margin: 0.2rem;
+      border-radius: 2rem;
+      /*från julldryck Alex*/
+      transform-origin: 4px 0px;
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+    }
+    header > #meny > span:first-child{
+      transform-origin: 0% 0%;
+    }
+    header > #meny > span:nth-child(2){
+      transform-origin: 0% 100%;
+    }
+    header > #meny[data-status="true"] > span{
+      opacity: 1;
+      transform: rotate(45deg) translate(1px, 0px);
+      background-color: black;
+    }
+    header > #meny[data-status="true"] > span:nth-child(2){
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    header > #meny[data-status="true"] > span:nth-child(3){
+      transform: rotate(-45deg) translate(-3px, -4px);
+    }
+    #section1 {
+      height: 57.5rem;
+      display: flex;
+      flex-direction: column-reverse;
+      background-image: url(img/InspirerandeBild.jpg);
+      background-position: bottom;
+    }
+    #containerSection1{
+      height: 54.5rem;
+      width: 86rem;
+      margin: auto;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    #Rubrik{
+      font-size: 9rem;
+      font-weight: 600;
+      height: 23rem;
+      margin-top: 26rem;
+      padding: 0 1rem 0 4rem;
+      background-color: darkblue;
+      color: white;
+      box-shadow: 0 0 10px black;
+      border-radius: 1.5rem;
+    }
+    #sd1 {
+      height: 3rem;
+    }
+    </style>
   </head>
 <body>
   <header>
@@ -24,6 +129,11 @@
   </header>
      <section id="section1">
        <div id="sd1"></div>
+       <div id="containerSection1">
+          <h1 id="Rubrik">
+            World's top <br> 100 things
+          </h1>
+       </div>
      </section>
      <section id="section2">
        <div id="InfoContainer">
@@ -31,12 +141,69 @@
            <h1 id="HeaderSection2">Info</h1>
          </div>
          <div id="InfoContainerSection2">
-           <p id="TextSection2">vnreuvneriunurenv v eretve rever                        rereger gregrege gerfre gregregerg gergergreg grger                   greref re gre gre ge gr  gergregreg geg gergerreg                   gerge</p>
+           <p id="TextSection2">Välkommen till vår hemsida om rankningslistor! Med våra strukturerade och objektiva listor får du snabbt en överblick över de bästa alternativen. Låt oss guida dig till smarta val och spara tid och energi i ditt sökande. Utforska våra listor nu för att ta din köpupplevelse till nästa nivå!</p>
          </div>
        </div>
        <span id="tomsd2"></span>
      </section>
-     <section id="section3"><span id="tomsd3"></span></section>
+
+
+<!-- 600 x 730 px, 480 x 570 för stor bild & 300 x 192 för liten -->
+     <section id="section3">
+     <span id="tomsd3"></span>
+       <div id="Section3Version1">
+           <div class="StorBildContainer">
+             <img src="img/StorBatman.jpg" alt="">
+           </div>
+           <div class="TextContainer">
+             <h1 class="ListRubrik">15. Batman</h1>
+             <p class="ListText"> Batman är en ikonisk och populär superhjälte i DC Comics-universumet. Han är känd som "mörkrets riddare" och är känd för sin vilja att bekämpa brott i Gotham City.<br> Bruce Wayne, som är Batman bakom masken, är en rik företagare och filantrop, men han är också en mästerdetektiv och en expert i kampsport. Han använder sina intellektuella och fysiska färdigheter, tillsammans med sin arsenal av högteknologiska vapen och fordon, för att bekämpa skurkar och korruption. Batman är känd för sin karaktäristiska dräkt, inklusive sin fladdermusliknande mask och svarta cape, och han har en stark moralisk kod som präglas av hans tragiska bakgrund och önskan att rättvisa ska skipas i Gotham City.</p>
+           </div>
+       </div>
+       <div id="Section3Version2">
+           <div class="StorBildContainer">
+             <img src="" alt="">
+           </div>
+           <div class="TextContainer">
+             <h1 class="ListRubrik">14. </h1>
+             <p class="ListText"></p>
+           </div>
+       </div>
+       <div id="Section3Version3">
+           <div class="StorBildContainer">
+             <img src="img/StorVinkelslip.jpg" alt="">
+           </div>
+           <div class="TextContainer">
+             <h1 class="ListRubrik">13. Vinkelslip</h1>
+             <p class="ListText">En vinkelslip, även känd som vinkelslipmaskin eller vinkelslipare, är ett kraftfullt verktyg som används för att utföra olika typer av skärning, slipning och polering på olika material. Med en roterande skiva, vanligtvis mellan 4 och 9 tum i diameter, som drivs av en kraftfull motor, kan vinkelslipar klara av att hantera allt från metall och betong till keramik och sten. Vinkelslipar finns med olika typer av skivor och tillbehör, såsom kapskivor, diamantskivor och trådborstar, vilket gör dem användbara inom en mängd olika yrken och projekt, inklusive bygg, metallarbete, bilreparationer, hemmafix och mer. Det är dock viktigt att använda vinkelslipar med försiktighet och använda rätt skyddsutrustning, eftersom de är kraftfulla verktyg som kan vara farliga om de inte hanteras korrekt.</p>
+           </div>
+       </div>
+       <div id="Section3Version4">
+           <div class="StorBildContainer">
+             <img src="img/StorBagger.jpg" alt="">
+           </div>
+           <div class="TextContainer">
+             <h1 class="ListRubrik">12. Bagger 288</h1>
+             <p class="ListText">Bagger 288 är en imponerande och kraftfull gruvmaskin, även känd som en "terränggrävare", som används för att bryta och transportera stora mängder jord och mineraler. Det är en av världens största rörliga maskiner, med en höjd på över 96 meter och en vikt på cirka 13 500 ton. Bagger 288 används i gruvindustrin för att utvinna kol, koppar, uran och andra råvaror och kan gräva upp till 240 000 ton material per dag. Den har en kraftfull motor och ett komplicerat transportsystem som gör det möjligt för den att flytta på sig själv och arbeta i extremt svåra terränger. Bagger 288 är ett imponerande tekniskt underverk som visar på människans kapacitet att skapa enorma och kraftfulla maskiner för att utföra komplexa uppgifter.</p>
+           </div>
+       </div>
+       <div id="Section3Version5">
+           <div class="StorBildContainer">
+             <img src="" alt="">
+           </div>
+           <div class="TextContainer">
+             <h1 class="ListRubrik">11. </h1>
+             <p class="ListText"></p>
+           </div>
+       </div>
+       <div id="ArtikelVäljare3">
+         <img src="img/LitenBatman.jpg" alt="" id="ArtikelBild3_1">
+         <img src="" alt="" id="ArtikelBild3_2">
+         <img src="img/LitenVinkelslip.jpg" alt="" id="ArtikelBild3_3">
+         <img src="img/LitenBagger.jpg" alt="" id="ArtikelBild3_4">
+         <img src="" alt="" id="ArtikelBild3_5">
+       </div>
+     </section>
      <section id="section4">
        <div id="ContainerSection4">
          <h1 id="RubrikSection4">Se även</h1>
@@ -69,8 +236,137 @@
          </div>
        </div>
      </section>
-     <section id="section5"></section>
-     <section id="section6"></section>
+     <section id="section5">
+
+       <div id="Section5Version1">
+
+           <div class="StorBildContainer">
+             <img src="img/StorLunch.jpg" alt="">
+           </div>
+           <div class="TextContainer">
+             <h1 class="ListRubrik">10. Lunch </h1>
+             <p class="ListText">Lunch, den måltid mitt på dagen som är en viktig del av många människors rutin. Det är en möjlighet att pausa från arbete eller aktiviteter för att återhämta sig och njuta av en god och näringsrik måltid. Oavsett om det är ett snabbt mellanmål eller en trevlig sittande lunch med kollegor, vänner eller familj, ger lunchen energi och bränsle för resten av dagen. Det kan vara ett tillfälle att prova nya smaker och recept, eller bara njuta av gamla favoriter. Lunchen är inte bara en fysisk måltid, utan även en social och kulturell ritual som varierar i olika delar av världen. Oavsett vad du väljer att äta till lunch, är det en viktig tidpunkt för att ta en paus och ladda om inför eftermiddagens aktiviteter.</p>
+           </div>
+
+
+       </div>
+       <div id="Section5Version2">
+
+           <div class="StorBildContainer">
+             <img src="" alt="">
+           </div>
+           <div class="TextContainer">
+             <h1 class="ListRubrik">9. </h1>
+             <p class="ListText"></p>
+           </div>
+
+
+       </div>
+       <div id="Section5Version3">
+
+           <div class="StorBildContainer">
+             <img src="" alt="">
+           </div>
+           <div class="TextContainer">
+             <h1 class="ListRubrik">8. </h1>
+             <p class="ListText"></p>
+           </div>
+
+       </div>
+       <div id="Section5Version4">
+
+           <div class="StorBildContainer">
+             <img src="img/StorMaj7.jpg" alt="">
+           </div>
+           <div class="TextContainer">
+             <h1 class="ListRubrik">7. Maj-7 Ackord</h1>
+             <p class="ListText">Maj7-ackord är en vanlig ackordtyp inom musikteorin som används inom olika musikaliska genrer och stilar. Ett maj7-ackord består av fyra toner: grundtonen, den stora tersen, den rena kvinten och den stora septimen. Den stora septimen ger ackordet dess karakteristiska ljusa och färgstarka klang. Maj7-ackord används ofta för att skapa en känsla av harmonisk stabilitet, elegans och positivitet i musik. De används inom olika musikformer som jazz, pop, funk och fusion, och kan användas för att skapa en känsla av lyft och kreativitet i musikaliska arrangemang och kompositioner. Maj7-ackord är ett viktigt verktyg för musiker och låtskrivare att uttrycka sig harmoniskt och kreativt inom olika musikgenrer.</p>
+           </div>
+
+       </div>
+       <div id="Section5Version5">
+           <div class="StorBildContainer">
+             <img src="img/StorJul (1).jpg" alt="">
+           </div>
+           <div class="TextContainer">
+             <h1 class="ListRubrik">6. Jullov</h1>
+             <p class="ListText">Jullov är en efterlängtad och uppskattad tid på året då skolor och arbetsplatser tar en paus för att fira julhelgen. Det är en tid för att umgås med familj och vänner, njuta av traditioner och festligheter, samt koppla av och återhämta sig från det gångna året. För många är jullovet en speciell tid då man kan njuta av julpynt, god mat, julklappar och andra festligheter. Det är även en tid för reflektion, tacksamhet och att skapa minnen som kan vara kära i många år framöver. Jullovet är en tid att sätta vardagen åt sidan och fokusera på kärlek, gemenskap och glädje under den magiska julperioden.</p>
+           </div>
+
+
+       </div>
+       <div id="ArtikelVäljare5">
+         <img src="img/LitenLunch.jpg" alt="" class="ArtikelBild5">
+         <img src="" alt="" class="ArtikelBild5">
+         <img src="" alt="" class="ArtikelBild5">
+         <img src="img/LitenMaj7.jpg" alt="" class="ArtikelBild5">
+         <img src="img/LitenJul.jpg" alt="" class="ArtikelBild5">
+       </div>
+     </section>
+
+     <section id="section6">
+       <div id="Section6Version1">
+
+           <div class="StorBildContainer">
+             <img src="" alt="">
+           </div>
+           <div class="TextContainer">
+             <h1 class="ListRubrik">5. </h1>
+             <p class="ListText"></p>
+           </div>
+
+       </div>
+       <div id="Section6Version2">
+           <div class="StorBildContainer">
+             <img src="img/StorAmmonium.jpg" alt="">
+           </div>
+           <div class="TextContainer">
+             <h1 class="ListRubrik">4. Haber-Bosch-Processen </h1>
+             <p class="ListText">Haber-Bosch-processen är en industriell process som används för att syntetisera ammoniak (NH3), en viktig kemikalie som används för att producera gödningsmedel och kemikalier. Processen uppfanns av Fritz Haber och Carl Bosch på 1900-talet och har revolutionerat jordbruket genom att göra storskalig produktion av gödningsmedel möjlig, vilket har ökat världens livsmedelsproduktion avsevärt. Haber-Bosch-processen innebär att kvävgas och vätgas reagerar vid högt tryck och hög temperatur i närvaro av en katalysator för att producera ammoniak. Det är en energiintensiv process som har haft en stor inverkan på den moderna livsmedelsproduktionen och den globala ekonomin.</p>
+           </div>
+
+       </div>
+       <div id="Section6Version3">
+
+           <div class="StorBildContainer">
+             <img src="" alt="">
+           </div>
+           <div class="TextContainer">
+             <h1 class="ListRubrik">3. </h1>
+             <p class="ListText"></p>
+           </div>
+
+       </div>
+       <div id="Section6Version4">
+
+           <div class="StorBildContainer">
+             <img src="img/StorChatGPT.jpg" alt="">
+           </div>
+           <div class="TextContainer">
+             <h1 class="ListRubrik">2. Chat GPT</h1>
+             <p class="ListText">Chat GPT är en avancerad och kraftfull språkmodell utvecklad av OpenAI. Det är en form av artificiell intelligens som använder djupinlärning för att förstå och generera mänskligt liknande text. Med Chat GPT kan användare interagera på ett naturligt sätt genom att skicka textbaserade frågor och få detaljerade och kvalitativa svar tillbaka. Chat GPT används i olika sammanhang, som kundtjänst, textgenerering, översättning och mycket mer. Det är ett kraftfullt verktyg för att automatisera och förbättra kommunikationen mellan människor och maskiner, och har potentialen att förändra hur vi interagerar med teknik och information i framtiden.</p>
+           </div>
+
+       </div>
+       <div id="Section6Version5">
+
+           <div class="StorBildContainer">
+             <img src="" alt="">
+           </div>
+           <div class="TextContainer">
+             <h1 class="ListRubrik">1. </h1>
+             <p class="ListText"></p>
+           </div>
+
+       </div>
+       <div id="ArtikelVäljare6">
+         <img src="" alt="" class="ArtikelBild6">
+         <img src="img/LitenAmmonium.jpg" alt="" class="ArtikelBild6">
+         <img src="" alt="" class="ArtikelBild6">
+         <img src="img/LitenChatGPT.jpg" alt="" class="ArtikelBild6">
+         <img src="" alt="" class="ArtikelBild6">
+       </div>
+     </section>
      <footer>
        <aside class="left-side"><p>Integritetspolicy</p> | <p>Cookiepolicy</p> | <p>Kontakta oss</p></aside>
        <aside class="right-side"><p>Copyright © 2014 Best Things In The World. All rights reserved.</p>

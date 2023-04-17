@@ -1,3 +1,4 @@
+
 body {
   background-color: turquoise;
   height: auto;
@@ -144,6 +145,53 @@ header > #meny[data-status="true"] > span:nth-child(3){
   position: relative;
   top:3rem;
 }
+
+.StorBildContainer{
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.TextContainer{
+  width: 55%;
+  padding-right: 3rem;
+}
+.ListRubrik{
+  color: white;
+  font-size: 4rem;
+}
+.ListText{
+  color: white;
+  font-size: 1.7rem;
+}
+
+#Section3Version1, #Section3Version2, #Section3Version3, #Section3Version4, #Section3Version5{
+  display: flex;
+  width: 86rem;
+  height: 45.75rem;
+  background-color: red;
+  margin: auto;
+}
+#Section3Version2, #Section3Version3, #Section3Version4, #Section3Version5{
+  display: none;
+}
+
+#ArtikelVäljare3, #ArtikelVäljare5, #ArtikelVäljare6{
+  width: 86%;
+  height: 15.25rem;
+  background-color: orange;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#ArtikelVäljare5{
+  margin-left: 14%;
+}
+.ArtikelBild{
+  height: 90%;
+  width: 17%;
+}
+
 #section4 {
   height: 55rem;
   background-image: linear-gradient(to bottom right, blue ,black);
@@ -157,7 +205,7 @@ header > #meny[data-status="true"] > span:nth-child(3){
 #RubrikSection4{
   color: white;
   font-size: 7rem;
-  padding-top: 1.5rem;
+  margin-top: 0;
   margin-left: 2rem;
   margin-bottom: 0rem;
   font-weight: 500;
@@ -191,9 +239,30 @@ header > #meny[data-status="true"] > span:nth-child(3){
 #section5{
   height: 61rem;
 }
+#Section5Version1, #Section5Version2, #Section5Version3, #Section5Version4, #Section5Version5{
+  display: flex;
+  width: 86rem;
+  height: 45.75rem;
+  background-color: red;
+  margin: auto;
+}
+#Section5Version2, #Section5Version3, #Section5Version4, #Section5Version5{
+  display: none;
+}
 #section6{
   height: 61rem;
 }
+#Section6Version1, #Section6Version2, #Section6Version3, #Section6Version4, #Section6Version5{
+  display: flex;
+  width: 86rem;
+  height: 45.75rem;
+  background-color: red;
+  margin: auto;
+}
+#Section6Version2, #Section6Version3, #Section6Version4, #Section6Version5{
+  display: none;
+}
+
 footer {
   height: 37rem;
   background-color: black;
